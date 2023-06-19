@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Icon For Title Page -->
+    <link rel="shortcut icon" href="./Images/timer-icon.png" type="image/x-icon">
+    <!-- Web Fonts -->
+    <script src="https://kit.fontawesome.com/5a1ddf1742.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="openTab('tab1')">
+    <h1>Timer</h1>
+    <!-- Timer -->
+    <div class="timer content" id="tab1">
+        <div class="btn_tab">
+            <button onclick="openTab('tab1')"><i class="far fa-hourglass"><span>Timer</span></i></button>
+            <button onclick="openTab('tab2')"><i class="fas fa-stopwatch"><span>StopWatch</span></i></button>
+        </div>
+        <div class="timer_watch">
+            <span>00 m 00 s</span>
+        </div>
+        <div class="control_btn">
+            <button>Start</button>
+            <button>Reset</button>
+        </div>
+    </div>
+    
+    <!-- Stop Watch -->
+    <div class="timer content" id="tab2">
+        <div class="btn_tab">
+            <button onclick="openTab('tab1')"><i class="far fa-hourglass"><span>Timer</span></i></button>
+            <button onclick="openTab('tab2')"><i class="fas fa-stopwatch"><span>StopWatch</span></i></button>
+        </div>
+        <div class="timer_watch">
+            <span>0 s 00</span>
+        </div>
+        <div class="control_btn">
+            <button>Start</button>
+            <button>Reset</button>
+        </div>
+    </div>
+
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>
